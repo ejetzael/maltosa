@@ -2,3 +2,4 @@ este repo es de pruebas y ensayos con angular+
 
 
 y este archivo se creo en la web de github
+--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.--.

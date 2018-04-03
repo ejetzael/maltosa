@@ -1,1 +1,91 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  /* src:local(), local(), url() format();
+  unicode-range: U+26; */
+}
+
+.navMain {
+    background-color: aquamarine;
+}
+.navMain .btn-on {
+    color:#0f9beb;
+    text-decoration: underline;
+}
+
+
+/* Animte de fHerrera */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.card-column {
+
+}
+.card{
+  border: 1px solid tomato;
+  padding: 10px;
+  border-radius:5px;
+  margin: 0 5px 5px 0;
+  max-width: 250px;
+  float: left;
+}
+.card-img-block {
+  text-align: center;
+  margin: auto;
+}
+.card-block {
+  padding: 5px;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+
+}
+.text-muted {
+
+}
+.img-logo {
+  width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.d{
+
+}

@@ -9,3 +9,7 @@ git status
 git rm -r --- para remover ---
 
 # historico del proj
+
+
+----
+ng g c [ruta]/name

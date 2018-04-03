@@ -1,0 +1,26 @@
+<section class="ed-item ed-container animated fadeIn fast">
+  <div class="ed-item m-70 m-offset-15">
+    <h2>Este es Heroes</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam consequuntur repudiandae dolore quos dolorem, debitis
+      tempore laborum iure, officiis ut distinctio reiciendis optio illo dicta doloribus excepturi vel odit qui?
+    </p>
+  </div>
+  <div class="ed-item l-60 m-offset-20 card-column">
+    <div class="card" *ngFor="let personaje of heroes; let i = index">
+
+      <img class="card-img-block img-fluid" [src]="personaje.img" [alt]="personaje.nombre">
+      <div class="card-block">
+        <div class="card-title">{{ personaje.nombre }}</div>
+        <p class="card-text">{{ personaje.bio }}</p>
+        <p class="card-text"><small class="text-muted">{{ personaje.aparicion }}</small></p>
+        <button (click)="verSujeto(i)" 
+        type="button" class="btn">Ver más...</button>
+        <!-- <a [routerLink]="['/sujeto',i]" class="btn">Puche</a> -->
+      </div>
+
+    </div>
+  </div>
+  <div class="ed-item">
+  </div>
+</section>

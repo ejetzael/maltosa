@@ -1,0 +1,34 @@
+<section class="ed-item ed-container animated fadeIn fast">
+  <div class="ed-item m-70 m-offset-15">
+    <h2>Este es {{ sujeto.nombre }} <small>{{ sujeto.aparicion }}</small></h2>
+    <p>
+      DE eoj oj oj  ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam consequuntur repudiandae dolore quos dolorem, debitis
+      tempore laborum iure, officiis ut distinctio reiciendis optio illo dicta doloribus excepturi vel odit qui?
+    </p>
+  </div>
+  <div class="ed-item l-60 m-offset-20 card-column">
+    
+    <div class="card">
+    
+      <img class="card-img-block img-fluid" [src]="sujeto.img" [alt]="sujeto.nombre">
+      <div class="card-block">
+        <div class="card-title">{{ sujeto.nombre }}</div>
+        <p class="card-text">{{ sujeto.bio }}</p>
+        <p class="card-text">
+          <small class="text-muted">{{ sujeto.aparicion }}</small>
+          <figure>
+            <img *ngIf="sujeto.casa == 'Marvel'" class="img-logo" src="assets/images/marvel-logo.png" alt="marvel">
+            <img *ngIf="sujeto.casa == 'DC'" class="img-logo" src="assets/images/dc-logo.png" alt="DC">
+            <!-- <caption> https://www.udemy.com/angular-2-fernando-herrera/learn/v4/t/lecture/6428334?start=0 </caption> -->
+          </figure>
+        </p>
+
+        <a [routerLink]="['/heroes']" class="btn">Volver</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ed-item">
+  </div>
+</section>

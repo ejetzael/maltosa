@@ -73,11 +73,61 @@
 .img-logo {
   width: 50px;
 }
+.viewSujeto {
+  border-radius: 5px;
+  border:1px solid tomato;
+  padding: 5px;
+  overflow: hidden;
+  margin-top:20px;
+}
+.viewSujeto__pic {
+  float: left;
+  max-width: 200px;
+  width: 50%;
+}
+.viewSujeto__picFluid {
+  width: 100%;
+}
+.viewSujeto__pic span {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.viewSujeto__info {
+  float: left;
+  width:50%;
+}
+.viewSujeto__bio {
 
+}
+.viewSujeto__start {
 
-
-
-
+}
+.viewSujeto__start ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.viewSujeto__start li {
+  float: left;
+}
+.viewSujeto .btn {
+  padding: 5px;
+  background-color: #0f9beb;
+  color: #fff;
+  margin: 10px;
+}
+.viewSujeto__marca {
+  margin: 0;
+  padding: 0;
+}
+.teiblView {
+  border: 1px solid cyan;
+  margin-bottom: 20px;
+}
+.teiblView tr {
+  background-color: lightsalmon;
+}
 
 
 

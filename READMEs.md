@@ -13,3 +13,5 @@ git rm -r --- para remover ---
 
 ----
 ng g c [ruta]/name
+
+ng g p [ruta]/pipeName

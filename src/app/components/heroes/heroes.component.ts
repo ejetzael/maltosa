@@ -25,4 +25,9 @@ export class HeroesComponent implements OnInit {
     this.router.navigate( ['/sujeto', idx] );
   }
 
+  buscarHeroe( termino:string ){
+    console.log(termino);
+    this.router.navigate( ['/buscar',termino] );
+  }
+
 }

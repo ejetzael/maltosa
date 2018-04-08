@@ -1,17 +1,16 @@
 <section class="ed-item ed-container animated fadeIn fast">
   <div class="ed-item m-70 m-offset-15">
-    <h2>Este es Heroes</h2>
-    <p>
-      |||
-    </p>
-    <div>
-      <form action="" class="ds" onsubmit="return false">
-        <input class="" type="text" placeholder="Nuscar monigote" (keyup.enter)="buscarHeroe(buscarTexto.value)" #buscarTexto>
-        <button (click)="buscarHeroe(buscarTexto.value)" 
-              class="" type="button">Buscar</button>
-      </form>
-    </div>
+    <h2>Buscando <small>{{ termino }}</small></h2>
   </div>
+
+  <div class="ed-item m-70 m-offset-15 animated fadeIn fast" *ngIf="heroes.length == 0">
+    <div class="kj">
+      No existen resultados con el termino: {{ termino }}
+    </div>
+    <div class="kj">
+      <a [routerLink]="['heroes']" class="sw">Volver</a>    </div>
+  </div>
+
   <div class="ed-item l-60 m-offset-20 card-column">
     <div class="card" *ngFor="let personaje of heroes; let i = index">
 
@@ -19,9 +18,10 @@
       <div class="card-block">
         <div class="card-title">{{ personaje.nombre }}</div>
         <p class="card-text">{{ personaje.bio }}</p>
-        <p class="card-text"><small class="text-muted">{{ personaje.aparicion }}</small></p>
-        <button (click)="verSujeto(i)" 
-        type="button" class="btn">Ver más...</button>
+        <p class="card-text">
+          <small class="text-muted">{{ personaje.aparicion }}</small>
+        </p>
+        <button (click)="verSujeto(i)" type="button" class="btn">Ver más...</button>
         <!-- <a [routerLink]="['/sujeto',i]" class="btn">Puche</a> -->
       </div>
 
